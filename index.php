@@ -8,6 +8,8 @@ $projectController = new ProjectController();
 $taskController = new TaskController();
 $teamController = new TeamController();
 
+//hello
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['section'])) {
     $section = $_POST['section'];
     if ($section === 'project') $projectController->handleForm();
